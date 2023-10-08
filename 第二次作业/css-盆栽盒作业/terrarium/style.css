@@ -1,0 +1,97 @@
+h1 {
+	color: blue;
+	text-align: center;
+}
+
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+#left-container {
+	left: 0px;
+}
+
+#right-container {
+	right: 0px;
+}
+
+.container {
+	background-color: #eee;
+	width: 15%;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+
+.plant-holder {
+	position: relative;
+	height: 13%;
+	left: -10px;
+}
+
+.plant {
+	position: absolute;
+	max-width: 150%;
+	max-height: 150%;
+	z-index: 2;
+}
+/*运用flexbox构建不同形状的盆栽盒*/
+.jar-walls {
+	display: flex; /*设置jar-walls为一个弹性容器*/
+	flex-direction: column; /*子元素垂直排列*/
+	justify-content: flex-end; /*子元素在容器底部对齐*/
+	align-items: center; /*子元素在容器中心对齐*/
+	height: 80%;
+	width: 45%;
+	background: #d1e1df;
+	border-radius: 50%; /*设置盆栽盒的主体是一个圆形*/
+	position: absolute;
+	bottom: 0.5%;
+	left: 27%;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.jar-top {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 20%;
+	height: 5%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 75.5%;
+	left: 39.3%; /*调节盆栽盒顶部开口的位置，使其组合成花瓶形状*/
+	opacity: 1;
+	z-index: 1;
+}
+
+.jar-bottom {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 25%;
+	height: 5%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 0.5%;
+	left: 37%;  /*调节盆栽盒底座的位置，使其组合成花瓶形状*/
+	opacity: 1;
+}
+
+.dirt {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 26%;
+	height: 6%;
+	background: #3a241d;
+	position: absolute;
+	border-radius: 0 0 7rem 7rem;
+	bottom: 5%;
+	left: 36.45%;
+	opacity: 1;
+	z-index: -1;
+}
+

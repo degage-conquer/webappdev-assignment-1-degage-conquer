@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog</title>
+  <style>
+    /*设置网站背景*/
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: top center;
+    }
+
+    /* 设置网站标题 */
+    h1 {
+      color: white;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* 设置网站侧边栏 */
+    .sidebar {
+      width: 200px;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #f1f1f1;
+      padding-top: 20px;
+    }
+
+    /* 设置侧边栏中的头像 */
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    /* 设置文章列表 */
+    .articles {
+      margin-left: 220px;
+      margin-top: 50px;
+    }
+
+    /* 设置导航栏 */
+    nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    nav a {
+          display: block;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">News</a>
+  </nav>
+
+  <!-- 网站标题 -->
+  <h1>My Blog</h1>
+
+  <!-- 侧边栏 -->
+  <div class="sidebar">
+    <img src="profile_photo.jpg" alt="Avatar" class="avatar">
+    <p>个人介绍</p>
+    <p>北京邮电大学</p>
+    <p>大数据管理与应用专业</p>
+    <ul>
+      <li><a href="#">其他网站链接</a></li>
+      <li><a href="https://github.com/degage-conquer">Github主页地址</a></li>
+    </ul>
+  </div>
+
+  <!-- 文章列表 -->
+  <div class="articles">
+    <h2>文章列表</h2>
+    <ul>
+      <li><a href="#">如何在github上创建拉取请求</a></li>
+      <p>首先需要进入到想要做出贡献的公共存储库，即项目的主文件夹，然后分叉存储库</p>
+      <li><a href="#">nodejs函数方法</a></li>
+      <p>function函数名(a1,a2){}</p>
+      <li><a href="#">nodejs循环</a></li>
+      <p>for(const data of arrayname){}可直接遍历数组元素</p>
+    </ul>
+  </div>
+</body>
+</html>
